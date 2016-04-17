@@ -1,5 +1,5 @@
 (function () {
-  function GETParam (val) {
+  function param (val) {
     var result = null, tmp = [];
     var items = window.location.search.substr(1).split("&");
     for(var index = 0; index < items.length; index++) {
@@ -18,7 +18,7 @@
   };
   listen(window, 'message', function (event) {
     if (event.data.type === '__tr') {
-      event.source.postMessage({ value: GETParam(event.data.param) }, event.origin)
+      event.source.postMessage({ value: param(event.data.param) }, event.origin)
     }
   });
 })();

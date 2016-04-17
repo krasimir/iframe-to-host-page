@@ -1,0 +1,22 @@
+{
+  "name": "iframe-to-host-page",
+  "version": "1.0.0",
+  "description": "An example if iframe to/from host page communication",
+  "main": "index.js",
+  "scripts": {
+    "build": "uglifyjs ./js/host-script.js -c -m -o ./build/host-script.min.js && uglifyjs ./js/getHostPageParam.js -c -m -o ./build/getHostPageParam.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasimir/iframe-to-host-page"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krasimir/iframe-to-host-page/issues"
+  },
+  "homepage": "https://github.com/krasimir/iframe-to-host-page",
+  "devDependencies": {
+    "uglify-js": "2.6.2"
+  }
+}
